@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_caesar">
+
+    <fragment
+        android:id="@+id/nav_caesar"
+        android:name="com.example.encryptionmethod.ui.caesar.CaesarFragment"
+        android:label="@string/menu_caesar"
+        tools:layout="@layout/fragment_caesar"/>
+
+    <fragment
+        android:id="@+id/nav_frequency"
+        android:name="com.example.encryptionmethod.ui.frequency.FrequencyFragment"
+        android:label="@string/menu_frequency"
+        tools:layout="@layout/fragment_frequency" />
+
+    <fragment
+        android:id="@+id/nav_easy_replacement"
+        android:name="com.example.encryptionmethod.ui.easy_replacement.EasyReplacementFragment"
+        android:label="@string/menu_easy_replacement"
+        tools:layout="@layout/fragment_easy_replacement" />
+
+    <fragment
+        android:id="@+id/nav_frequency_analysis"
+        android:name="com.example.encryptionmethod.ui.frequency.FrequencyAnalysisFragment"
+        android:label="@string/menu_frequency_analysis"
+        tools:layout="@layout/fragment_frequency_analysis" />
+
+    <fragment
+        android:id="@+id/nav_vigenere"
+        android:name="com.example.encryptionmethod.ui.VigenereFragment"
+        android:label="@string/menu_vigenere"
+        tools:layout="@layout/fragment_vigienere" />
+
+</navigation>

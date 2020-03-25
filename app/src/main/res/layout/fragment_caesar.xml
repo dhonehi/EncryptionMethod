@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.caesar.CaesarFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:id="@+id/data">
+
+        <EditText
+            android:id="@+id/alphabet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/input_alphabet"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textCursorDrawable="@drawable/cursor_style"
+            android:theme="@style/EditTextTheme"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/input_text"
+            android:inputType="textMultiLine"
+            android:maxLines="4"
+            android:textCursorDrawable="@drawable/cursor_style"
+            android:theme="@style/EditTextTheme" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ListView
+        android:id="@+id/listOfResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/data"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="250dp">
+    </ListView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/menu_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="16dp"
+        fab:fab_addButtonColorNormal="@color/colorPrimary"
+        fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        fab:fab_addButtonPlusIconColor="#000000"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:layout_behavior="com.example.encryptionmethod.behaviors.ShrinkBehavior">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_encode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#ff8a65"
+            fab:fab_colorPressed="#c75b39"
+            fab:fab_size="mini"
+            fab:fab_title="Шифровать" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_decode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#ff8a65"
+            fab:fab_colorPressed="#c75b39"
+            fab:fab_size="mini"
+            fab:fab_title="Дешифровать" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

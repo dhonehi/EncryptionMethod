@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:yourapp="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_settings"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_settings_white_24dp">
+        <menu >
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/russian"
+                    android:title="@string/russian_language"
+                    app:showAsAction="ifRoom|withText" />
+                <item
+                    android:id="@+id/english"
+                    android:title="@string/english_language"
+                    app:showAsAction="always|withText" />
+            </group>
+        </menu>
+    </item>
+</menu>
