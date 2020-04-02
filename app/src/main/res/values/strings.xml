@@ -12,6 +12,7 @@
     <string name="menu_easy_replacement">Шифр простой замены</string>
     <string name="menu_frequency_analysis">Частотный анализ</string>
     <string name="menu_vigenere">Шифр Виженера</string>
+    <string name="menu_permutation">Шифр простой замены</string>
 
     <string name="home_second">Home Second</string>
     <string name="russian_language">Русский</string>

@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_frequency,
                 R.id.nav_easy_replacement,
                 R.id.nav_frequency_analysis,
-                R.id.nav_vigenere
+                R.id.nav_vigenere,
+                R.id.nav_permutation
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -62,15 +63,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return false
-    }
-
-    override fun onBackPressed() {
-        Log.d("MSG", "${fragmentManager!!.backStackEntryCount}")
-        if(fragmentManager!!.backStackEntryCount > 0) {
-            fragmentManager.popBackStack()
-        } else {
-            super.onBackPressed()
-        }
     }
 }
 

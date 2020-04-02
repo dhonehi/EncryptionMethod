@@ -35,4 +35,10 @@
         android:label="@string/menu_vigenere"
         tools:layout="@layout/fragment_vigienere" />
 
+    <fragment
+        android:id="@+id/nav_permutation"
+        android:name="com.example.encryptionmethod.ui.PermutationFragment"
+        android:label="@string/menu_permutation"
+        tools:layout="@layout/fragment_permutation" />
+
 </navigation>
